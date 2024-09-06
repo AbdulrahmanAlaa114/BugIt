@@ -99,19 +99,34 @@ struct ShareView: View {
                     .cornerRadius(10)
                     .font(.headline)
             }
-
-
         }
     }
     
     func extractItem(size: CGSize) {
         guard !itemsProviders.isEmpty else { return }
         DispatchQueue.global(qos: .userInteractive).async {
-            if let item = itemsProviders.last {
-                _ = item.loadDataRepresentation(for: .image) { data, error in
-                    if let data , let image = UIImage(data: data), let thumbnail = image.preparingThumbnail(of: .init(width: size.width, height: 300)) {
-                        DispatchQueue.main.async {
-                            viewModel.inputImage = thumbnail
+            for item in itemsProviders {
+                if let firstTypeIdentifier = item.registeredTypeIdentifiers.first {
+                    item.loadItem(forTypeIdentifier: firstTypeIdentifier, options: nil) { (item, error) in
+                        if let error = error {
+                            print("Error loading item: \(error.localizedDescription)")
+                            return
+                        }
+                        if let image = item as? UIImage {
+                            DispatchQueue.main.async {
+                                viewModel.inputImage = image
+                            }
+                        } else if let item = item {
+                            if let fileURL = item as? URL {
+                                do {
+                                    let contentData = try Data(contentsOf: fileURL)
+                                    DispatchQueue.main.async {
+                                        viewModel.inputImage = UIImage(data: contentData)
+                                    }
+                                } catch {
+                                    print("Error reading file data: \(error.localizedDescription)")
+                                }
+                            }
                         }
                     }
                 }
