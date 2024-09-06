@@ -31,14 +31,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
-        var handled = GIDSignIn.sharedInstance.handle(url)
+        let handled = GIDSignIn.sharedInstance.handle(url)
         if handled { return true }
         return false
     }
     
     func application(_ app: UIApplication, open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
-        var handled = GIDSignIn.sharedInstance.handle(url)
+        let handled = GIDSignIn.sharedInstance.handle(url)
         if handled { return true }
         return false
     }
