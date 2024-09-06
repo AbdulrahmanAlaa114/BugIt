@@ -37,6 +37,15 @@
       }
     },
     {
+      "identity" : "google-api-objectivec-client-for-rest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/google-api-objectivec-client-for-rest.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3f01d672eba32b69b849d8a04ba89cfebc30e110"
+      }
+    },
+    {
       "identity" : "googleappmeasurement",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleAppMeasurement.git",
