@@ -14,12 +14,8 @@ class ShareViewModel: ObservableObject {
 
     var bugStorageManager: BugStorageManager
     
-    init() {
-        if #available(iOS 17.0, *) {
-            bugStorageManager = SwiftDataBugManager()
-        } else {
-            bugStorageManager = UserDefaultsBugManager()
-        }
+    init(bugStorageManager: BugStorageManager = BugStorageManagerFactory.createBugStorageManager() ) {
+        self.bugStorageManager = bugStorageManager
     }
     
     func save() {

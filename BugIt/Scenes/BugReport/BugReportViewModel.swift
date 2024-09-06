@@ -24,15 +24,13 @@ class BugReportViewModel: ObservableObject {
     let signInManager: GoogleSignInManager
     let bugStorageManager: BugStorageManager
 
-    init(bugUploaderService: BugReportUploaderService = BugReportUploaderService()) {
+    init(
+        bugUploaderService: BugReportUploaderService = BugReportUploaderService(),
+        bugStorageManager: BugStorageManager = BugStorageManagerFactory.createBugStorageManager()
+    ) {
         self.bugUploaderService = bugUploaderService
+        self.bugStorageManager = bugStorageManager
         self.signInManager = GoogleSignInManager()
-       
-        if #available(iOS 17.0, *) {
-            bugStorageManager = SwiftDataBugManager()
-        } else {
-            bugStorageManager = UserDefaultsBugManager()
-        }
     }
     
     var isSubmitButtonDisabled: Bool {

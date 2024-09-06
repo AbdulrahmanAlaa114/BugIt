@@ -38,6 +38,8 @@
 		049879F52C8B4F3F00C49457 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F32C8B4F3F00C49457 /* Bug.swift */; };
 		049879F72C8B4F5F00C49457 /* BugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F62C8B4F5F00C49457 /* BugModel.swift */; };
 		049879F82C8B4F5F00C49457 /* BugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F62C8B4F5F00C49457 /* BugModel.swift */; };
+		04AF914A2C97656800006520 /* BugStorageManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF91492C97656800006520 /* BugStorageManagerFactory.swift */; };
+		04AF914B2C97662000006520 /* BugStorageManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF91492C97656800006520 /* BugStorageManagerFactory.swift */; };
 		04F6BFE02C8B1A3D00F037CC /* BugItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6BFDF2C8B1A3D00F037CC /* BugItApp.swift */; };
 		04F6BFE42C8B1A3E00F037CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6BFE32C8B1A3E00F037CC /* Assets.xcassets */; };
 		04F6BFE72C8B1A3E00F037CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6BFE62C8B1A3E00F037CC /* Preview Assets.xcassets */; };
@@ -94,6 +96,7 @@
 		049879ED2C8B4EB900C49457 /* SwiftDataBugManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataBugManager.swift; sourceTree = "<group>"; };
 		049879F32C8B4F3F00C49457 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 		049879F62C8B4F5F00C49457 /* BugModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugModel.swift; sourceTree = "<group>"; };
+		04AF91492C97656800006520 /* BugStorageManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugStorageManagerFactory.swift; sourceTree = "<group>"; };
 		04F6BFDC2C8B1A3D00F037CC /* BugIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6BFDF2C8B1A3D00F037CC /* BugItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugItApp.swift; sourceTree = "<group>"; };
 		04F6BFE32C8B1A3E00F037CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +161,7 @@
 				049879C32C8B362900C49457 /* BugReportUploaderService.swift */,
 				049879ED2C8B4EB900C49457 /* SwiftDataBugManager.swift */,
 				049879EC2C8B4EB900C49457 /* UserDefaultsBugManager.swift */,
+				04AF91492C97656800006520 /* BugStorageManagerFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -382,6 +386,7 @@
 				049879F12C8B4EB900C49457 /* SwiftDataBugManager.swift in Sources */,
 				049879D92C8B4D6100C49457 /* ShareViewController.swift in Sources */,
 				049879EF2C8B4EB900C49457 /* UserDefaultsBugManager.swift in Sources */,
+				04AF914B2C97662000006520 /* BugStorageManagerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04479B9E2C8B257600B886AE /* BugReportView.swift in Sources */,
+				04AF914A2C97656800006520 /* BugStorageManagerFactory.swift in Sources */,
 				04479BAE2C8B28E900B886AE /* FirebaseStorageService.swift in Sources */,
 				049879F72C8B4F5F00C49457 /* BugModel.swift in Sources */,
 				04479BC82C8B339400B886AE /* GoogleSignInManager.swift in Sources */,
@@ -622,6 +628,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,6 +661,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
