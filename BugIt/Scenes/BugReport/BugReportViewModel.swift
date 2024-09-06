@@ -22,10 +22,17 @@ class BugReportViewModel: ObservableObject {
 
     let bugUploaderService: BugReportUploaderService
     let signInManager: GoogleSignInManager
-    
+    let bugStorageManager: BugStorageManager
+
     init(bugUploaderService: BugReportUploaderService = BugReportUploaderService()) {
         self.bugUploaderService = bugUploaderService
         self.signInManager = GoogleSignInManager()
+       
+        if #available(iOS 17.0, *) {
+            bugStorageManager = SwiftDataBugManager()
+        } else {
+            bugStorageManager = UserDefaultsBugManager()
+        }
     }
     
     var isSubmitButtonDisabled: Bool {
@@ -34,12 +41,28 @@ class BugReportViewModel: ObservableObject {
     
     func onAppear() {
         signIn()
+        getDataFromShare()
     }
     
     func signIn() {
         Task {
             guard let rootViewController = UIApplication.shared.windows.first?.rootViewController else { return }
             await signInManager.signIn(presenting: rootViewController)
+        }
+    }
+    
+    func getDataFromShare() {
+        Task {
+            do {
+                let bugs = try await bugStorageManager.loadBugs()
+                if let bug = bugs.last {
+                    description = bug.description
+                    inputImage = UIImage(data: bug.imageData)
+                    try bugStorageManager.deleteAll()
+                }
+            } catch {
+                showAlert(title: "Failed", message: "Failed to retrive bug from share.")
+            }
         }
     }
     

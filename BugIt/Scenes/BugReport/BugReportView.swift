@@ -9,8 +9,11 @@ import SwiftUI
 
 
 struct BugReportView: View {
+    
     @StateObject private var viewModel = BugReportViewModel()
     @FocusState private var isDescriptionFieldFocused: Bool
+    
+    private let notificationCenter = NotificationCenter.default
 
     var body: some View {
         NavigationView {
@@ -36,6 +39,9 @@ struct BugReportView: View {
                 if viewModel.isLoading {
                     loadingOverlay
                 }
+            }
+            .onReceive(notificationCenter.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+                viewModel.getDataFromShare()
             }
         }
     }

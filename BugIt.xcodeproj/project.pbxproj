@@ -24,10 +24,48 @@
 		04479BD02C8B355200B886AE /* GoogleSheetsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04479BCF2C8B355200B886AE /* GoogleSheetsService.swift */; };
 		049879C22C8B35F500C49457 /* GoogleAPIClientForREST_Sheets in Frameworks */ = {isa = PBXBuildFile; productRef = 049879C12C8B35F500C49457 /* GoogleAPIClientForREST_Sheets */; };
 		049879C42C8B362900C49457 /* BugReportUploaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879C32C8B362900C49457 /* BugReportUploaderService.swift */; };
+		049879D92C8B4D6100C49457 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879D82C8B4D6100C49457 /* ShareViewController.swift */; };
+		049879DC2C8B4D6100C49457 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049879DA2C8B4D6100C49457 /* MainInterface.storyboard */; };
+		049879E02C8B4D6100C49457 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 049879D62C8B4D6100C49457 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		049879E82C8B4E6B00C49457 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879E72C8B4E6B00C49457 /* ShareViewModel.swift */; };
+		049879EA2C8B4EAE00C49457 /* BugStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879E92C8B4EAE00C49457 /* BugStorageManager.swift */; };
+		049879EB2C8B4EAE00C49457 /* BugStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879E92C8B4EAE00C49457 /* BugStorageManager.swift */; };
+		049879EE2C8B4EB900C49457 /* UserDefaultsBugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879EC2C8B4EB900C49457 /* UserDefaultsBugManager.swift */; };
+		049879EF2C8B4EB900C49457 /* UserDefaultsBugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879EC2C8B4EB900C49457 /* UserDefaultsBugManager.swift */; };
+		049879F02C8B4EB900C49457 /* SwiftDataBugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879ED2C8B4EB900C49457 /* SwiftDataBugManager.swift */; };
+		049879F12C8B4EB900C49457 /* SwiftDataBugManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879ED2C8B4EB900C49457 /* SwiftDataBugManager.swift */; };
+		049879F42C8B4F3F00C49457 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F32C8B4F3F00C49457 /* Bug.swift */; };
+		049879F52C8B4F3F00C49457 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F32C8B4F3F00C49457 /* Bug.swift */; };
+		049879F72C8B4F5F00C49457 /* BugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F62C8B4F5F00C49457 /* BugModel.swift */; };
+		049879F82C8B4F5F00C49457 /* BugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049879F62C8B4F5F00C49457 /* BugModel.swift */; };
 		04F6BFE02C8B1A3D00F037CC /* BugItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6BFDF2C8B1A3D00F037CC /* BugItApp.swift */; };
 		04F6BFE42C8B1A3E00F037CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6BFE32C8B1A3E00F037CC /* Assets.xcassets */; };
 		04F6BFE72C8B1A3E00F037CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F6BFE62C8B1A3E00F037CC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		049879DE2C8B4D6100C49457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F6BFD42C8B1A3D00F037CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049879D52C8B4D6100C49457;
+			remoteInfo = Share;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		049879E42C8B4D6100C49457 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				049879E02C8B4D6100C49457 /* Share.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04479B9D2C8B257600B886AE /* BugReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportView.swift; sourceTree = "<group>"; };
@@ -44,6 +82,18 @@
 		04479BCE2C8B33FB00B886AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		04479BCF2C8B355200B886AE /* GoogleSheetsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetsService.swift; sourceTree = "<group>"; };
 		049879C32C8B362900C49457 /* BugReportUploaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportUploaderService.swift; sourceTree = "<group>"; };
+		049879D62C8B4D6100C49457 /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		049879D82C8B4D6100C49457 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		049879DB2C8B4D6100C49457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		049879DD2C8B4D6100C49457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049879E52C8B4D6700C49457 /* Share.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Share.entitlements; sourceTree = "<group>"; };
+		049879E62C8B4D6F00C49457 /* BugIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BugIt.entitlements; sourceTree = "<group>"; };
+		049879E72C8B4E6B00C49457 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
+		049879E92C8B4EAE00C49457 /* BugStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugStorageManager.swift; sourceTree = "<group>"; };
+		049879EC2C8B4EB900C49457 /* UserDefaultsBugManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsBugManager.swift; sourceTree = "<group>"; };
+		049879ED2C8B4EB900C49457 /* SwiftDataBugManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataBugManager.swift; sourceTree = "<group>"; };
+		049879F32C8B4F3F00C49457 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
+		049879F62C8B4F5F00C49457 /* BugModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugModel.swift; sourceTree = "<group>"; };
 		04F6BFDC2C8B1A3D00F037CC /* BugIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6BFDF2C8B1A3D00F037CC /* BugItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugItApp.swift; sourceTree = "<group>"; };
 		04F6BFE32C8B1A3E00F037CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		049879D32C8B4D6100C49457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F6BFD92C8B1A3D00F037CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +156,8 @@
 				04479BC72C8B339400B886AE /* GoogleSignInManager.swift */,
 				04479BCF2C8B355200B886AE /* GoogleSheetsService.swift */,
 				049879C32C8B362900C49457 /* BugReportUploaderService.swift */,
+				049879ED2C8B4EB900C49457 /* SwiftDataBugManager.swift */,
+				049879EC2C8B4EB900C49457 /* UserDefaultsBugManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -106,6 +165,7 @@
 		04479BAA2C8B28BA00B886AE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				049879E92C8B4EAE00C49457 /* BugStorageManager.swift */,
 				04479BAB2C8B28D000B886AE /* StorageService.swift */,
 				04479BC42C8B325C00B886AE /* BugReportService.swift */,
 			);
@@ -136,10 +196,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		049879D72C8B4D6100C49457 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				049879E52C8B4D6700C49457 /* Share.entitlements */,
+				049879D82C8B4D6100C49457 /* ShareViewController.swift */,
+				049879E72C8B4E6B00C49457 /* ShareViewModel.swift */,
+				049879DA2C8B4D6100C49457 /* MainInterface.storyboard */,
+				049879DD2C8B4D6100C49457 /* Info.plist */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		049879F22C8B4EC900C49457 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				049879F32C8B4F3F00C49457 /* Bug.swift */,
+				049879F62C8B4F5F00C49457 /* BugModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		04F6BFD32C8B1A3D00F037CC = {
 			isa = PBXGroup;
 			children = (
 				04F6BFDE2C8B1A3D00F037CC /* BugIt */,
+				049879D72C8B4D6100C49457 /* Share */,
 				04F6BFDD2C8B1A3D00F037CC /* Products */,
 				049879C02C8B35F500C49457 /* Frameworks */,
 			);
@@ -149,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				04F6BFDC2C8B1A3D00F037CC /* BugIt.app */,
+				049879D62C8B4D6100C49457 /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,13 +239,15 @@
 		04F6BFDE2C8B1A3D00F037CC /* BugIt */ = {
 			isa = PBXGroup;
 			children = (
-				04479BCE2C8B33FB00B886AE /* Info.plist */,
+				049879E62C8B4D6F00C49457 /* BugIt.entitlements */,
 				04F6BFDF2C8B1A3D00F037CC /* BugItApp.swift */,
-				04479BBA2C8B2B8C00B886AE /* GoogleService-Info.plist */,
 				04479B9B2C8B252900B886AE /* Scenes */,
-				04479BA12C8B25EE00B886AE /* Components */,
 				04479BA92C8B28A900B886AE /* Services */,
+				049879F22C8B4EC900C49457 /* Models */,
 				04479BBE2C8B31CE00B886AE /* Helpers */,
+				04479BA12C8B25EE00B886AE /* Components */,
+				04479BBA2C8B2B8C00B886AE /* GoogleService-Info.plist */,
+				04479BCE2C8B33FB00B886AE /* Info.plist */,
 				04F6BFE32C8B1A3E00F037CC /* Assets.xcassets */,
 				04F6BFE52C8B1A3E00F037CC /* Preview Content */,
 			);
@@ -180,6 +265,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		049879D52C8B4D6100C49457 /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 049879E12C8B4D6100C49457 /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				049879D22C8B4D6100C49457 /* Sources */,
+				049879D32C8B4D6100C49457 /* Frameworks */,
+				049879D42C8B4D6100C49457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = 049879D62C8B4D6100C49457 /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		04F6BFDB2C8B1A3D00F037CC /* BugIt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F6BFEA2C8B1A3E00F037CC /* Build configuration list for PBXNativeTarget "BugIt" */;
@@ -187,10 +289,12 @@
 				04F6BFD82C8B1A3D00F037CC /* Sources */,
 				04F6BFD92C8B1A3D00F037CC /* Frameworks */,
 				04F6BFDA2C8B1A3D00F037CC /* Resources */,
+				049879E42C8B4D6100C49457 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				049879DF2C8B4D6100C49457 /* PBXTargetDependency */,
 			);
 			name = BugIt;
 			packageProductDependencies = (
@@ -213,6 +317,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					049879D52C8B4D6100C49457 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					04F6BFDB2C8B1A3D00F037CC = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -237,11 +344,20 @@
 			projectRoot = "";
 			targets = (
 				04F6BFDB2C8B1A3D00F037CC /* BugIt */,
+				049879D52C8B4D6100C49457 /* Share */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		049879D42C8B4D6100C49457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049879DC2C8B4D6100C49457 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F6BFDA2C8B1A3D00F037CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,21 +371,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		049879D22C8B4D6100C49457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049879F82C8B4F5F00C49457 /* BugModel.swift in Sources */,
+				049879F52C8B4F3F00C49457 /* Bug.swift in Sources */,
+				049879E82C8B4E6B00C49457 /* ShareViewModel.swift in Sources */,
+				049879EB2C8B4EAE00C49457 /* BugStorageManager.swift in Sources */,
+				049879F12C8B4EB900C49457 /* SwiftDataBugManager.swift in Sources */,
+				049879D92C8B4D6100C49457 /* ShareViewController.swift in Sources */,
+				049879EF2C8B4EB900C49457 /* UserDefaultsBugManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		04F6BFD82C8B1A3D00F037CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04479B9E2C8B257600B886AE /* BugReportView.swift in Sources */,
 				04479BAE2C8B28E900B886AE /* FirebaseStorageService.swift in Sources */,
+				049879F72C8B4F5F00C49457 /* BugModel.swift in Sources */,
 				04479BC82C8B339400B886AE /* GoogleSignInManager.swift in Sources */,
 				04479BAC2C8B28D000B886AE /* StorageService.swift in Sources */,
+				049879F02C8B4EB900C49457 /* SwiftDataBugManager.swift in Sources */,
 				04479BA32C8B261400B886AE /* ImagePicker.swift in Sources */,
 				04479BC52C8B325C00B886AE /* BugReportService.swift in Sources */,
 				04479BD02C8B355200B886AE /* GoogleSheetsService.swift in Sources */,
 				04479BA02C8B259F00B886AE /* BugReportViewModel.swift in Sources */,
 				049879C42C8B362900C49457 /* BugReportUploaderService.swift in Sources */,
 				04F6BFE02C8B1A3D00F037CC /* BugItApp.swift in Sources */,
+				049879EA2C8B4EAE00C49457 /* BugStorageManager.swift in Sources */,
+				049879EE2C8B4EB900C49457 /* UserDefaultsBugManager.swift in Sources */,
 				04479BA52C8B262B00B886AE /* DotLoader.swift in Sources */,
+				049879F42C8B4F3F00C49457 /* Bug.swift in Sources */,
 				04479BC12C8B31F100B886AE /* Constants.swift in Sources */,
 				04479BC32C8B321A00B886AE /* Date+Extension.swift in Sources */,
 			);
@@ -277,7 +412,78 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		049879DF2C8B4D6100C49457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 049879D52C8B4D6100C49457 /* Share */;
+			targetProxy = 049879DE2C8B4D6100C49457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		049879DA2C8B4D6100C49457 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				049879DB2C8B4D6100C49457 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		049879E22C8B4D6100C49457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share/Share.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42X54ZR4SN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Share;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AbdulrahmanAlaa.BugIt.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		049879E32C8B4D6100C49457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share/Share.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42X54ZR4SN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Share;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AbdulrahmanAlaa.BugIt.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		04F6BFE82C8B1A3E00F037CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -400,8 +606,10 @@
 		04F6BFEB2C8B1A3E00F037CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BugIt/BugIt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BugIt/Preview Content\"";
@@ -430,8 +638,10 @@
 		04F6BFEC2C8B1A3E00F037CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BugIt/BugIt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BugIt/Preview Content\"";
@@ -460,6 +670,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		049879E12C8B4D6100C49457 /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				049879E22C8B4D6100C49457 /* Debug */,
+				049879E32C8B4D6100C49457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		04F6BFD72C8B1A3D00F037CC /* Build configuration list for PBXProject "BugIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
